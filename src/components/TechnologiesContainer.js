@@ -1,4 +1,5 @@
 import { DiHtml5, DiCss3, DiJsBadge, DiNodejsSmall, DiReact } from 'react-icons/di'
+import { SiTypescript } from 'react-icons/si'
 
 import '../styles/components/technologiescontainer.sass'
 
@@ -8,6 +9,7 @@ const technologies = [
     { id: "js", name: "JavaScript", icon: <DiJsBadge /> },
     { id: "node", name: "Node.js", icon: <DiNodejsSmall /> },
     { id: "react", name: "React", icon: <DiReact /> },
+    { id: "type", name: "TypeScript", icon: <SiTypescript /> },
 ]
 
 const TechnologiesContainer = () => {
@@ -19,7 +21,7 @@ const TechnologiesContainer = () => {
                     {tech.icon}
                     <div className='technologies-info'>
                         <h3>{tech.name}</h3>
-                        <p>Salve galerinha do youtube</p>
+                        <p>Informações das tecnologias</p>
                     </div>  
                 </div>
             ))}
